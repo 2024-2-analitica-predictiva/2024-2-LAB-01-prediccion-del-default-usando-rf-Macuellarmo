@@ -203,7 +203,7 @@ with open("files/output/metrics.json", "w") as f:
 
 metrics = {
     "type": "metrics",
-    "dataset": "train",
+    "dataset": "test",
     "precision": precision_score(y_test, grid.predict(x_test)),
     "balanced_accuracy": balanced_accuracy_score(y_test, grid.predict(x_test)),
     "recall": recall_score(y_test, grid.predict(x_test)),
